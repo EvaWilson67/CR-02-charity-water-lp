@@ -1,47 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>charity: water Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
-
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+  <div class="page">
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="#" aria-label="charity: water home">
+        <!-- <div class="brand-mark" aria-hidden="true"> -->
+          <!-- <div class="logo-line logo-line-top"></div>
+          <div class="logo-line logo-line-bottom"></div>
+          <div class="logo-curve logo-curve-top-left"></div>
+          <div class="logo-curve logo-curve-top-right"></div>
+          <div class="logo-curve logo-curve-bottom-left"></div>
+          <div class="logo-curve logo-curve-bottom-right"></div>
+          <div class="logo-cross logo-cross-one"></div>
+          <div class="logo-cross logo-cross-two"></div>
         </div>
-    </section>
+        <div class="brand-name">charity: water</div> -->
+        <img id="logo" src="img/cw_logo-2.png" alt="Charity Water logo with Jerry Can">
+      </a>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#">Take Action</a>
+        <div class="nav-divider" aria-hidden="true"></div>
+        <a href="#">About Us</a>
+      </nav>
+
+      <a class="give-button" href="#">GIVE</a>
+    </header>
+
+    <main class="hero" aria-label="Clean water campaign landing page">
+      <section class="hero-copy">
+        <h1>Clean Water.<br />Real Change.</h1>
+        <div class="headline-underline" aria-hidden="true"></div>
+        <p class="intro">
+          charity: water makes giving simple, transparent, and<br />
+          impactful by showing where your donation goes and<br />
+          how it helps bring clean water to communities in<br />
+          need.
+        </p>
+
+        <form class="donation-card" aria-label="Donation form">
+          <p class="donation-note">
+            100% of the money donated goes directly to<br />
+            funding clean water projects.
+          </p>
+
+          <div class="amount-grid">
+            <button type="button">$1</button>
+            <button type="button">$5</button>
+            <button class="selected" type="button">$10</button>
+            <button type="button">$20</button>
+            <button class="other" type="button">Other</button>
+          </div>
+
+          <button class="donate-button" type="submit">DONATE IN SECONDS</button>
+        </form>
+
+        <p class="served-count">Over 21,641,908 people served as of May 7, 2026</p>
+      </section>
+      <img src="img/hero.jpg" class="hero-image" alt="Siblings collecting water with Jerry Can">
+    </main>
+  </div>
 </body>
 </html>
