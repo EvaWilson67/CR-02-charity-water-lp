@@ -54,7 +54,7 @@ a {
   /* overflow: hidden; */
   background: var(--cream);
   padding: 30px 10px 10px 10px;
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -68,6 +68,7 @@ a {
   display: flex;
   align-items: center;
   z-index: 2;
+  margin-bottom: 10px;
 }
 
 .brand {
@@ -355,10 +356,10 @@ h1 {
   margin: 20px 2px;
 }
 
-@media (max-width: 1290px) {
+@media (max-width: 1190px) {
   .page {
     transform-origin: top left;
-      width: auto;
+    width: auto;
   }
 
   .hero {
@@ -372,11 +373,10 @@ h1 {
 
   .main-nav {
     visibility: hidden;
-}
+  }
 
-.donation-card{
-  width:auto;
-}
+  .donation-card {
+    width: auto;
+  }
 
 }
-
