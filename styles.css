@@ -47,21 +47,12 @@ a {
 }
 
 .page {
-  /* position: relative; */
-  /* width: 1280px;
-  height: 800px; */
-  /* margin: 0 auto; */
-  /* overflow: hidden; */
   background: var(--cream);
   max-width: 1280px;
   margin: 0 auto;
 }
 
 .site-header {
-  /* position: absolute;
-  top: 25px;
-  left: 62px;
-  right: 58px; */
   padding: 20px;
   height: 40px;
   display: flex;
