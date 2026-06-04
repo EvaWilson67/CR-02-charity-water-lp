@@ -17,7 +17,7 @@
 
 html,
 body {
-  margin: 0;
+  margin: 10px;
   min-height: 100%;
 }
 
@@ -25,10 +25,14 @@ body {
   background: var(--cream);
   color: var(--black);
   font-family: "Proxima Nova", "ProximaNova", Arial, Helvetica, sans-serif;
+
+  margin: 10 auto;
+  /* overflow: hidden; */
+  background: var(--cream);
 }
 
-#logo{
-  width:250px;
+#logo {
+  width: 250px;
 }
 
 button,
@@ -43,19 +47,23 @@ a {
 }
 
 .page {
-  position: relative;
-  width: 1280px;
-  height: 800px;
-  margin: 0 auto;
-  overflow: hidden;
+  /* position: relative; */
+  /* width: 1280px;
+  height: 800px; */
+  /* margin: 0 auto; */
+  /* overflow: hidden; */
   background: var(--cream);
+  padding: 30px 10px 10px 10px;
+  width: 1280px;
+  margin: 0 auto;
 }
 
 .site-header {
-  position: absolute;
+  /* position: absolute;
   top: 25px;
   left: 62px;
-  right: 58px;
+  right: 58px; */
+  padding: 20px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -171,12 +179,13 @@ a {
 }
 
 .main-nav {
+  padding-top: 3px;
   display: flex;
   align-items: center;
   gap: 18px;
   margin-left: 42px;
   font-size: 21px;
-  line-height: 1;
+  /* line-height: 1; */
   letter-spacing: 0.1px;
 }
 
@@ -210,22 +219,27 @@ a {
 }
 
 .hero {
-  position: absolute;
+  /* position: absolute;
   top: 73px;
   left: 51px;
   width: 1184px;
-  height: 727px;
+  height: 727px; */
   border-radius: 24px;
   background: var(--navy);
   color: var(--white);
   overflow: hidden;
+  display: flex;
+  /* justify-content: center; */
+  margin-inline-end: 10px;
+  justify-content: space-around;
 }
 
 .hero-copy {
-  position: absolute;
+  /* position: absolute;
   left: 48px;
   top: 41px;
-  width: 540px;
+  width: 540px; */
+  padding: 10px 20px;
 }
 
 h1 {
@@ -326,9 +340,9 @@ h1 {
 }
 
 .hero-image {
-  position: absolute;
+  /* position: absolute;
   top: 37px;
-  right: 56px;
+  right: 56px; */
   width: 421px;
   height: 633px;
   border-radius: 24px;
@@ -337,10 +351,32 @@ h1 {
   background-image: url("hero-crop.png");
   background-size: cover;
   background-position: center;
+  padding: 5px;
+  margin: 20px 2px;
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1290px) {
   .page {
     transform-origin: top left;
+      width: auto;
   }
+
+  .hero {
+    flex-wrap: wrap;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    /* width:80%; */
+  }
+
+  .main-nav {
+    visibility: hidden;
 }
+
+.donation-card{
+  width:auto;
+}
+
+}
+
